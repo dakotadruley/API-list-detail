@@ -1,15 +1,20 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const QueenDetail = ({ name, onChange }) => (
-  <>
-    <input type="color" value={color} name="color" onChange={onChange} />
-    <input type="text" value={name} name="name" onChange={onChange} />
-  </>
+const QueenDetail = ({ name, image, winner, missCongeniality, quote }) => (
+  <section>
+    <h2>{name}</h2>
+    <img src={image} />
+    <p>Winner? {winner}</p>
+    <p>MissCongeniality? {missCongeniality}</p>
+    <p>Quote: {quote}</p>
+  </section>
 );
 QueenDetail.propTypes = {
-  color: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
-  onChange: PropTypes.func.isRequired
+  image: PropTypes.string.isRequired,
+  winner: PropTypes.bool.isRequired,
+  missCongeniality: PropTypes.bool.isRequired,
+  quote: PropTypes.string.isRequired
 };
 export default QueenDetail;
