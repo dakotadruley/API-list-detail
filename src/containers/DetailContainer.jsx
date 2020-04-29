@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Queens from '../../components/Queens/Queens.jsx';
+import QueenDetail from '../components/Detail/QueenDetail.jsx';
 
 const QueenPicker = () => {
   const [color, setColor] = useState('#FF0000');
@@ -19,7 +19,7 @@ const QueenPicker = () => {
 
   return (
     <>
-      <Queens name={name} onChange={handleChange} />
+    <QueenDetail />
     </>
   );
 };
