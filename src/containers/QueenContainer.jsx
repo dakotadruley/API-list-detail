@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import Queens from '../../components/Queens/Queens.jsx';
-import Queen from '../../components/Queens/Queen.jsx';
 import Header from '../../components/Header/Header.jsx';
 
 const QueenPicker = () => {
@@ -14,9 +13,9 @@ const QueenPicker = () => {
 
   return (
     <>
-      <Controls color={color} name={name} onChange={handleChange} />
-      <Display color={color} name={name} />
+      <Header />
+      <Queens name={name} onChange={handleChange} />
     </>
   );
 };
-export default ColorPicker;
+export default QueenPicker;
