@@ -7,7 +7,8 @@ const Repo = ({ name, html_url }) => (
 
 Repo.propTypes = {
   name: PropTypes.string.isRequired,
-  html_url: PropTypes.string.isRequired,
+  image: PropTypes.string.isRequired,
+  url: PropTypes.string.isRequired
 };
 
 export default Repo;

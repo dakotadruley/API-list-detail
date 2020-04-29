@@ -20,6 +20,7 @@ Queens.propTypes = {
   queens: PropTypes.arrayOf(PropTypes.shape({
     id: PropTypes.number.isRequired,
     name: PropTypes.string.isRequired,
+    image: PropTypes.string.isRequired,
     url: PropTypes.string.isRequired
   })).isRequired
 };
