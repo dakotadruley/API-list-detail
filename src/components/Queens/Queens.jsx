@@ -1,12 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Queen from './Queen.jsx';
+import { Link } from 'react-router-dom';
 
 const Queens = ({ queens }) => {
   const queenElements = queens.map(queen => (
-    <li key={queen.id}>
-      <Queen {...queen} />
-    </li>
+    <Link to={`/Detail/${queen.id}`} key={queen.id}>
+      <li>
+        <Queen {...queen} />
+      </li>
+    </Link>
   ));
 
   return (

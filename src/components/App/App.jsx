@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../App.css';
+// import '../../App.css';
 import {
   Route, 
   Switch,  
@@ -14,8 +14,8 @@ export default function App() {
       <Router>
         <Header />
         <Switch>
-          <Route path='/Detail/:id' component={DetailContainer} />
-          <Route path='/Queens' component={QueenContainer} /> 
+          <Route exact path='/' component={QueenContainer} /> 
+          <Route exact path='/Detail/:id' component={DetailContainer} />
         </Switch>
       </Router>
     </>
